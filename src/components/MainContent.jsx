@@ -11,7 +11,7 @@ import { FlipWords } from './ui/flip-words'
 export default function MainContent() {
     const [currentPage, setCurrentPage] = useState(0)
     const [selectedImage, setSelectedImage] = useState(null)
-    const name = 'Sweetie' // You can change this name to whatever you want
+    const name = 'Gaajubomma' // You can change this name to whatever you want
 
     const nextPage = () => setCurrentPage((prev) => Math.min(prev + 1, 5))
     const prevPage = () => setCurrentPage((prev) => Math.max(prev - 1, 0))
@@ -70,12 +70,11 @@ export default function MainContent() {
             <h2 className="text-3xl font-bold text-blue-600 mb-6 relative z-10">Our Journey</h2>
             <div className="space-y-4 flex-1 overflow-y-auto overflow-x-hidden rounded-xl custom-scrollbar">
                 {[
-                    { date: '14 February, 2022', event: 'Our Journey Began', emoji: '❤️' },
-                    { date: '1 March, 2022', event: 'First Movie Together', emoji: '🎬' },
-                    { date: '1 March, 2022', event: 'First Hug', emoji: '🤗' },
-                    { date: '5 May, 2022', event: 'First Trip Together', emoji: '✈️' },
-                    { date: '10 August, 2022', event: 'First Fight & Patch-up', emoji: '💬' },
-                    { date: '25 December, 2022', event: 'First Christmas Together', emoji: '🎄' },
+                    { date: ' 10 February, 2017', event: 'Our Journey Began', emoji: '❤️' },
+                    { date: '8 August, 2019', event: 'First Movie Together', emoji: '🎬' },
+                    { date: '16 March, 2018', event: 'First Hug', emoji: '🤗' },
+                    { date: 'Waiting to plan our first trip', event: 'First Trip Together', emoji: '✈️' },
+                    { date: '0 fights..hope to fight some time', event: 'First Fight & Patch-up', emoji: '💬' },
                 ]
                     .map((item, index) => (
                         <motion.div
@@ -106,18 +105,8 @@ export default function MainContent() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <TimeCounter
-                            startDate="2019-10-23"
+                            startDate="2017-02-09"
                             label="As Friends"
-                        />
-                    </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
-                    >
-                        <TimeCounter
-                            startDate="2022-01-14"
-                            label="As a Couple"
                         />
                     </motion.div>
                 </div>
@@ -176,16 +165,29 @@ export default function MainContent() {
             <div className="bg-white rounded-xl p-6 shadow-md overflow-y-auto flex-1 custom-scrollbar">
                 <div className="relative z-10">
                     <div className="text-gray-700 text-lg leading-relaxed mb-4">
-                        <p>From the very first moment our paths crossed, life has felt more beautiful, more exciting, and more meaningful. Every smile, every conversation, and every memory we've shared has built a story so precious that no words can truly capture it. I feel incredibly grateful to have someone like you by my side, someone who understands me without even saying a word, someone who brings light even on the darkest days. Through ups and downs, laughter and tears, you've been a constant source of strength and happiness. As we continue to write our journey together, I want you to always remember that you are deeply cherished, endlessly appreciated, and truly loved. Here's to the countless memories we've yet to create and the beautiful future that awaits us. You are, and always will be, my favorite part of every day.💖</p>
+                        <p>There’s so much I’ve wanted to tell you, and sometimes words fall short—but today, I want to try.
+
+From the very beginning, you’ve been more than just a partner—you’ve been the other half of my soul. With you, I found someone I could share every small detail with. From the silliest thoughts to the heaviest feelings, I never felt the need to hide. You listened, you understood, and you made every little thing feel important. That’s rare. That’s love.
+
+I’ve always treated you like something delicate and priceless, like glass—not because I thought you were fragile, but because I never wanted this world to leave a single mark on your smile. Every step I took with you was careful, full of intention, because you matter that deeply to me.
+
+I’ve loved you since the start, but it keeps growing, endlessly. I love you more today than I did yesterday, and I know tomorrow will only deepen it more.
+
+And then came the moment that changed everything—your pregnancy. That phase brought us even closer. We became super glue, bound so tightly that even air couldn’t pass between us. Every heartbeat, every breath, every emotion felt like it was shared. We weren’t just close—we were one.
+
+We chose to fight for peace, not against each other. We didn’t allow negativity to make its way between us. We chose transparency over silence. We spoke when it was hard, loved when it was easiest to shut down, and held each other through storms that no one else could see.
+
+Attha, you are the warmth in my cold days, the calm in my chaos, and the heart in my every heartbeat. You’ve stood by me, loved me, and stayed close even when life was pulling us apart. That kind of love—our love—is unshakable.
+
+I don’t know what the future holds, but I do know this: as long as you’re with me, I can face anything. Thank you for being my home, my strength, my everything.</p>
                     </div>
                     <p className="text-right text-rose-600 font-semibold">
                         Forever yours,<br />
-                        Your love❤️
+                        Your Bashi❤️
                     </p>
                 </div>
             </div>
         </StoryPage>,
-
         // Final Page
         <StoryPage key="final" backgroundColor="bg-gradient-to-br from-pink-100 to-blue-200">
             <div className="flex flex-col items-center justify-center h-full text-center">
